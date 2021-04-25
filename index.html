@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <link rel="shortcut icon" href="./public/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Covid 19</title>
+</head>
+<body>
+    
+    <header>
+        <p>C
+            <img src="./public/img/logo.png" alt="covid 19">
+            VID - 19
+        </p>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <p id="name"></p>
+        </div>
+        <div class="box">     
+            <p>Active</p>
+            <p id="active" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+        <div class="box ">
+            <p>Confirmed</p>
+            <p id="confirmed" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+        <div class="box ">
+            <p>Death</p>
+            <p id="death" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+        <div class="box ">
+            <p>Recovered</p>
+            <p id="recovered" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+        <div class="box tconfirmed">
+            <p>Today Confirmed</p>
+            <p id="tconfirmed" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+        <div class="box ">
+            <p>Today Death</p>
+            <p id="tdeath" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+        <div class="box ">
+            <p>Today Recovered</p>
+            <p id="trecovered" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+        <div class="box ">
+            <p>Migrated Other</p>
+            <p id="migratedOther" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+        <div class="box ">
+            <p>Last Updated</p>
+            <p id="lastUpdatedTime" class="loading"></p>
+            <div class="colorStrip"></div>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="selectDiv">
+            <!-- <select name="state" id="stateSelect">
+                <option value="green">greeb\n</option>
+                <option value="green">sdfsa</option>
+                <option value="green">afds</option>
+
+            </select> -->
+        </div>
+        <button id="searchBtn">Search</button>
+    </div>
+
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

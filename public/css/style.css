@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overlock', cursive;
+}
+
+header{
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #fff;
+    height: 10vh;
+}
+
+header img{
+    width: 2.3rem;
+    margin: -5px;
+}
+
+.container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80vh;
+    grid-gap: 3vh;
+    padding: 3vh 3vw;
+    padding-top: 0vh;
+}
+
+.box{
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow:  5px 5px 5px #e0e0e0,
+             -5px -5px 5px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;   
+    font-size: 1.3rem;
+}
+
+.box:nth-child(1){
+    grid-column: 1/4;
+    box-shadow: none;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.colorStrip{
+    background-color: rgb(75, 219, 255);
+    height: 2vh;
+    width: 100%;
+}
+
+.search{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+select{
+    width: 70vw;
+    outline: none;
+    border-top: none;
+    padding-left: 10vw;
+}
+
+button{
+    width: 20vw;
+    color: rgb(75, 219, 255);
+    background-color: #1e1e1e;
+    outline: none;
+    border: none;
+    border: 1px solid #1e1e1e;
+    cursor: pointer;
+}
+
+select, button{
+    height: 5vh;
+    border-radius: 10px;
+}
+
+option{
+    color: rgb(75, 219, 255) !important;
+    background-color: #1e1e1e;
+}
+
+
+@media all and (max-width: 550px){
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+       height: auto;
+       grid-gap: 5vh;
+    }
+    .box{
+        height: 20vh;
+    }
+
+    .box:nth-child(1){
+        margin-top: 5vh;
+        grid-column: 1;
+        font-size: 3rem;
+    }
+}
