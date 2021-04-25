@@ -42,6 +42,7 @@ header img{
     justify-content: space-between;
     overflow: hidden;   
     font-size: 1.3rem;
+    text-align: center;
 }
 
 .box:nth-child(1){
@@ -90,6 +91,16 @@ option{
     background-color: #1e1e1e;
 }
 
+.global{
+    background-color: #1e1e1e;
+    margin-top: 2vh;
+    text-align: center;
+    padding: 1vh 1vw;
+}
+
+a{
+    color: rgb(75, 219, 255);
+}
 
 @media all and (max-width: 550px){
     .container{
