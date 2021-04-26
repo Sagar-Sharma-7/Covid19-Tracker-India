@@ -22,7 +22,7 @@ header img{
 }
 
 .container{
-    width: 100vw;
+    width: 98vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 80vh;
@@ -93,9 +93,10 @@ option{
 
 .global{
     background-color: #1e1e1e;
-    margin-top: 2vh;
+    margin-top: 3vh;
+    width: 100%;
     text-align: center;
-    padding: 1vh 1vw;
+    padding: 2vh 0vw;
 }
 
 a{
